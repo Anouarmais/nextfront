@@ -17,7 +17,7 @@ type Pedidos = {
 };
 
 useEffect(() => {
-  const socket = io("https://nestback.onrender.com");
+  const socket = io("https://www.kebabguadiaro.es");
 
   socket.on("nuevoPedido", (nuevoPedido: Pedidos) => {
     setPedidos(prev => [...prev, nuevoPedido]);
@@ -31,7 +31,7 @@ useEffect(() => {
 useEffect(() => {
   async function getData() {
     try {
-      const res = await fetch("https://nestback.onrender.com/ordenesTrabajo");
+      const res = await fetch("https://www.kebabguadiaro.es/ordenesTrabajo");
       const pedidos = await res.json();
       setPedidos(pedidos); // guardamos todos los pedidos
     } catch (error) {

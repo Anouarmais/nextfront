@@ -25,7 +25,7 @@ export default function Home() {
 
     try {
 
-      const link = `https://nestback.onrender.com/ordenesTrabajo/${pedidoId}`;
+      const link = `https://www.kebabguadiaro.es/ordenesTrabajo/${pedidoId}`;
 
       const res = await fetch(link);
 

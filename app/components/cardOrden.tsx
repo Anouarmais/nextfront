@@ -24,7 +24,7 @@ export default function CardOrden({ id, order, domicilio, customer_name, adress,
         const value = parseFloat(e.target.value);
         setTotalmod(value);
                 try {
-            const link = `https://nestback.onrender.com/ordenesTrabajo/${id}/total`;
+            const link = `https://www.kebabguadiaro.es/ordenesTrabajo/${id}/total`;
             fetch(link, {
                 method: "PUT",
                 headers: {
@@ -42,7 +42,7 @@ export default function CardOrden({ id, order, domicilio, customer_name, adress,
         setStatus(nuevoStatus);
 
         try {
-            const link = `https://nestback.onrender.com/ordenesTrabajo/${id}/status`;
+            const link = `https://www.kebabguadiaro.es/ordenesTrabajo/${id}/status`;
             fetch(link, {
                 method: "PUT",
                 headers: {
