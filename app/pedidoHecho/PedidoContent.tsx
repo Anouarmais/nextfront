@@ -16,14 +16,14 @@ export default function PedidoContent() {
 
     if (!id) return;
 
-    const socket = io("http://localhost:3001");
+    const socket = io("https://nestback.onrender.com");
 
     async function fetchPedido() {
 
       try {
 
         const res = await fetch(
-          `http://localhost:3001/ordenesTrabajo/${id}`
+          `https://nestback.onrender.com/ordenesTrabajo/${id}`
         );
 
         const data = await res.json();

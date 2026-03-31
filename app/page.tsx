@@ -25,7 +25,7 @@ export default function Home() {
 
     try {
 
-      const link = `http://localhost:3001/ordenesTrabajo/${pedidoId}`;
+      const link = `https://nestback.onrender.com/ordenesTrabajo/${pedidoId}`;
 
       const res = await fetch(link);
 

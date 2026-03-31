@@ -24,7 +24,7 @@ export default function CardOrden({ id, order, domicilio, customer_name, adress,
         const value = parseFloat(e.target.value);
         setTotalmod(value);
                 try {
-            const link = `http://localhost:3001/ordenesTrabajo/${id}/total`;
+            const link = `https://nestback.onrender.com/ordenesTrabajo/${id}/total`;
             fetch(link, {
                 method: "PUT",
                 headers: {
@@ -42,7 +42,7 @@ export default function CardOrden({ id, order, domicilio, customer_name, adress,
         setStatus(nuevoStatus);
 
         try {
-            const link = `http://localhost:3001/ordenesTrabajo/${id}/status`;
+            const link = `https://nestback.onrender.com/ordenesTrabajo/${id}/status`;
             fetch(link, {
                 method: "PUT",
                 headers: {

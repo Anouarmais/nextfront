@@ -17,7 +17,7 @@ type Pedidos = {
 };
 
 useEffect(() => {
-  const socket = io("http://localhost:3001");
+  const socket = io("https://nestback.onrender.com");
 
   socket.on("nuevoPedido", (nuevoPedido: Pedidos) => {
     setPedidos(prev => [...prev, nuevoPedido]);
@@ -31,7 +31,7 @@ useEffect(() => {
 useEffect(() => {
   async function getData() {
     try {
-      const res = await fetch("http://localhost:3001/ordenesTrabajo");
+      const res = await fetch("https://nestback.onrender.com/ordenesTrabajo");
       const pedidos = await res.json();
       setPedidos(pedidos); // guardamos todos los pedidos
     } catch (error) {
