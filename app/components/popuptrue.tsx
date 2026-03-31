@@ -32,7 +32,7 @@ export default function PopupTrue({ visible, pedidoID, onClose }: Props) {
 
                 {/* Botón extra para consultar el estado */}
                 <a
-                    href={`https://nestback.onrender.com/pedidoHecho?id=${pedidoID}`}
+                    href={`https://nestback.onrender.com/ordenesTrabajo/${pedidoID}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block mb-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
