@@ -19,7 +19,7 @@ export default function TelefonoInput() {
     
     const domicilio = formaEntrega === "domicilio";
     console.log("domicilio:", domicilio);
-    const res = await fetch("https://www.kebabguadiaro.es/ordenesTrabajo", {
+    const res = await fetch("https://nestback.onrender.com/ordenesTrabajo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
