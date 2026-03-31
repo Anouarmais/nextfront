@@ -16,14 +16,14 @@ export default function PedidoContent() {
 
     if (!id) return;
 
-    const socket = io("https://www.kebabguadiaro.es");
+    const socket = io("https://nestback.onrender.com");
 
     async function fetchPedido() {
 
       try {
 
         const res = await fetch(
-          `https://www.kebabguadiaro.es/ordenesTrabajo/${id}`
+          `https://nestback.onrender.com/ordenesTrabajo/${id}`
         );
 
         const data = await res.json();
